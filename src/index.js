@@ -8,18 +8,19 @@ const replace = require("replace");
 const configuration = require("./configuration");
 const base = require("./plugins/ts/base");
 const cra = require("./plugins/ts/cra");
+const next = require("./plugins/ts/next");
 
 let spinner = ora({
   color: "red"
 });
 
 const webCreator = {
-  cra
+  cra,
+  next
 };
 
 async function create(name) {
-  const config = await configuration();
-  const { type, includee2e, includeStorybook } = config;
+  const { type, includee2e, includeStorybook } = await configuration();
 
   // run the generator
   spinner.start("Generating project");

@@ -7,8 +7,8 @@ module.exports = async () => {
     message: "Which starter project you want to use?",
     choices: [
       { name: "create-react-app", value: "cra" },
-      { name: "next.js", value: "next" },
-      { name: "gatsby", value: "gatsby" }
+      { name: "next.js", value: "next" }
+      // { name: "gatsby", value: "gatsby" }
     ]
   });
 
