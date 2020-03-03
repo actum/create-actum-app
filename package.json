@@ -1,0 +1,23 @@
+{
+  "name": "create-actum-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/actum/create-actum-app.git",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "bin": "./bin/create-actum-app.js",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "command-exists": "^1.2.8",
+    "execa": "^4.0.0",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.0.5",
+    "ora": "^4.0.3",
+    "please-upgrade-node": "^3.2.0",
+    "replace": "^1.1.5",
+    "update-notifier": "^4.1.0",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}
