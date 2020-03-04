@@ -6,10 +6,12 @@ const path = require("path");
 const replace = require("replace");
 
 const configuration = require("./configuration");
+
 const base = require("./plugins/ts/base");
 const cra = require("./plugins/ts/cra");
 const next = require("./plugins/ts/next");
-const storybook = require("./plugins/storybook");
+const gatsby = require("./plugins/ts/gatsby");
+const storybook = require("./plugins/ts/storybook");
 
 let spinner = ora({
   color: "red"
@@ -17,7 +19,8 @@ let spinner = ora({
 
 const webCreator = {
   cra,
-  next
+  next,
+  gatsby
 };
 
 async function create(name) {

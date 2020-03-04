@@ -14,7 +14,9 @@ module.exports = async targetDir =>
     pkg.addDevDependency({
       "@babel/core": "7.8.6",
       "@storybook/react": "^5.3.14",
-      "babel-loader": "8.0.6"
+      "babel-loader": "8.0.6",
+      "react-docgen-typescript-loader": "^3.6.0",
+      "ts-loader": "^6.2.1"
     });
 
     return pkg.save();
