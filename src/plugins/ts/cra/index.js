@@ -3,9 +3,8 @@ const path = require("path");
 
 const Package = require("../../package");
 
-module.exports = async targetDir => {
-  const p = path.join(targetDir);
-  await fs.copy(path.join(__dirname, "template"), p).then(() => {
+module.exports = async targetDir =>
+  fs.copy(path.join(__dirname, "template"), targetDir).then(() => {
     const pkg = new Package(targetDir);
 
     pkg.addScript({
@@ -21,4 +20,3 @@ module.exports = async targetDir => {
 
     return pkg.save();
   });
-};

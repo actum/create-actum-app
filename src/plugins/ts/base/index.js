@@ -3,6 +3,5 @@ const path = require("path");
 
 const Package = require("../../package");
 
-module.exports = async targetDir => {
-  await fs.copy(path.join(__dirname, "template"), targetDir);
-};
+module.exports = async targetDir =>
+  fs.copy(path.join(__dirname, "template"), targetDir);

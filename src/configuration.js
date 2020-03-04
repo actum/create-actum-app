@@ -12,7 +12,6 @@ module.exports = async () => {
     ]
   });
 
-  /*
   const { includeStorybook } = await prompt({
     name: "includeStorybook",
     type: "list",
@@ -23,6 +22,7 @@ module.exports = async () => {
     ]
   });
 
+  /*
   const { includee2e } = await prompt({
     name: "includee2e",
     type: "list",
@@ -35,8 +35,8 @@ module.exports = async () => {
   */
 
   return {
-    type
-    // includeStorybook,
+    type,
+    includeStorybook
     // includee2e
   };
 };

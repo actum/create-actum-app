@@ -9,6 +9,7 @@ const configuration = require("./configuration");
 const base = require("./plugins/ts/base");
 const cra = require("./plugins/ts/cra");
 const next = require("./plugins/ts/next");
+const storybook = require("./plugins/storybook");
 
 let spinner = ora({
   color: "red"
@@ -34,7 +35,7 @@ async function create(name) {
   await webCreator[type](targetDir);
 
   // Copy storybook template
-  // includeStorybook && (await storybook(name, targetDir));
+  includeStorybook && (await storybook(targetDir));
 
   // Copy cypress templatee
   // includee2e && (await cypress(name, targetDir));
