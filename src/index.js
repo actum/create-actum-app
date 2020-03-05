@@ -11,6 +11,7 @@ const base = require("./plugins/ts/base");
 const cra = require("./plugins/ts/cra");
 const next = require("./plugins/ts/next");
 const gatsby = require("./plugins/ts/gatsby");
+const preact = require("./plugins/ts/preact");
 const storybook = require("./plugins/ts/storybook");
 
 let spinner = ora({
@@ -20,7 +21,8 @@ let spinner = ora({
 const webCreator = {
   cra,
   next,
-  gatsby
+  gatsby,
+  preact
 };
 
 async function create(name) {
