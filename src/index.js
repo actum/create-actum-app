@@ -13,6 +13,7 @@ const next = require("./plugins/ts/next");
 const gatsby = require("./plugins/ts/gatsby");
 const preact = require("./plugins/ts/preact");
 const storybook = require("./plugins/ts/storybook");
+const superdevstack = require("./plugins/js/superdevstack");
 
 let spinner = ora({
   color: "red"
@@ -22,7 +23,8 @@ const webCreator = {
   cra,
   next,
   gatsby,
-  preact
+  preact,
+  superdevstack
 };
 
 async function create(name) {

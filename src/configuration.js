@@ -9,7 +9,8 @@ module.exports = async () => {
       { name: "create-react-app", value: "cra" },
       { name: "next.js", value: "next" },
       { name: "gatsby", value: "gatsby" },
-      { name: "preact", value: "preact" }
+      { name: "preact", value: "preact" },
+      { name: "superdevstack", value: "superdevstack" }
     ]
   });
 
